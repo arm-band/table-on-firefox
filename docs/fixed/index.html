@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table fixed on Firefox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            margin: 1rem;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        td {
+            border-top: 1px dashed #333;
+            border-left: 1px dashed #333;
+            padding: 1rem;
+        }
+        tr:last-of-type td {
+            border-bottom: 1px dashed #333;
+        }
+        td:last-of-type {
+            border-right: 1px dashed #333;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>Arthur</td>
+                <td>Perceval</td>
+                <td>Galahad</td>
+            </tr>
+            <tr>
+                <td>Lancelot</td>
+                <td>Agravain</td>
+                <td>Mordred</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
